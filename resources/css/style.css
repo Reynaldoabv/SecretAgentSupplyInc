@@ -5,6 +5,7 @@ body {
 
 header {
 	background-color: black;
+	z-index: 2;
 }
 
 .container {
@@ -28,8 +29,9 @@ header {
 
 .main {
 	background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+	background-repeat: no-repeat;
 	background-size: cover;
-	max-height: 25rem;
+	height: 25rem;
 	padding-top: 9rem;
 	padding-left: 6rem;
 }
@@ -151,8 +153,9 @@ section {
 @media only screen and (max-width: 470px) {
 	
 	.main {
-		max-height: 15rem;
+		height: 15rem;
 		padding-top: 10rem;
+		display: flex;
 	}
 
 	.main div {
@@ -170,5 +173,26 @@ section {
 		font-size: 1rem;
 		padding-top: 0.25rem;
 	}
+	
+	#watch {
+		display: none;
+	}
 
+	#glasses {
+		display: none;
+	}
+
+	.locations-wrap {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.locations {
+		padding-top: 0.5rem;
+	}
+	
+	.footer {
+		text-align: center;
+		padding-left: 90px;
+	}
 }
