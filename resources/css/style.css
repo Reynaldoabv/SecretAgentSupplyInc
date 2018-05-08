@@ -156,6 +156,7 @@ section {
 		height: 15rem;
 		padding-top: 10rem;
 		display: flex;
+		align-items: flex-end;
 	}
 
 	.main div {
@@ -174,21 +175,31 @@ section {
 		padding-top: 0.25rem;
 	}
 	
-	#watch {
+	#watch, #glasses {
 		display: none;
 	}
 
-	#glasses {
-		display: none;
+	#section-pen {
+		width: 470px;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.images {
+		width: 90%;
 	}
 
 	.locations-wrap {
+		width: 470px;
 		display: flex;
+		justify-content: space-around;
 		flex-direction: column;
 	}
 
 	.locations {
 		padding-top: 0.5rem;
+		padding-left: 23.5px;
+		width: 90%;
 	}
 	
 	.footer {
